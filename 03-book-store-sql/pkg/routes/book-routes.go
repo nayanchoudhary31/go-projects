@@ -7,5 +7,6 @@ import (
 
 var BookStoreRoutes = func(router *mux.Router) {
 	router.HandleFunc("/books/", controller.CreateBook).Methods("POST")
+	router.HandleFunc("/books/", controller.CreateBook).Methods("GET")
 
 }

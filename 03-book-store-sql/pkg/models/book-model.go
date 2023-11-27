@@ -18,5 +18,4 @@ func init() {
 	config.Connect()
 	db = config.GetDb()
 	db.AutoMigrate(&Book{})
-
 }

@@ -7,6 +7,7 @@ import (
 
 var db *gorm.DB
 
+// Book Struct
 type Book struct {
 	gorm.Model
 	Name        string `gorm:""json:"name"`

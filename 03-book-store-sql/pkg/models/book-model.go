@@ -15,6 +15,7 @@ type Book struct {
 	Publication string `gorm:""json:"publication"`
 }
 
+// Database Connection
 func init() {
 	config.Connect()
 	db = config.GetDb()
